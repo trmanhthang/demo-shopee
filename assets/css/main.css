@@ -18,6 +18,10 @@
     position: relative;
 }
 
+.header__navbar-item:hover .header__qr {
+    display: block;
+}
+
 .header__navbar-icon-link,
 .header__navbar-item,
 .header__navbar-link {
@@ -57,4 +61,49 @@
 .header__navbar-title--no-pointer {
     cursor: text;
     color: var(--white-color);
+}
+
+/* HEADER QR */
+.header__qr {
+    position: absolute;
+    top: 140%;
+    width: 160px;
+    padding: 8px;
+    background: var(--white-color);
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    left: 0;
+    height: 12%;
+    content: "";
+    display: block;
+}
+
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.header__qr-link:nth-child(1) {
+    margin-left: 10px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 10px;
+}
+
+.header__qr-link-app{
+    height: 15px;
 }
