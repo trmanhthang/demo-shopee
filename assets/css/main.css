@@ -107,3 +107,62 @@
 .header__qr-link-app{
     height: 15px;
 }
+
+/* HEADER NOTIFYCATION */
+.header__notify {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background: var(--white-color);
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 0 0 12px;
+    line-height: 40px;
+
+}
+
+.header__notify-list {
+    
+}
+
+.header__notify-item {
+    list-style: none;
+}
+
+.header__notify-link {
+    display: flex;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.header__notify-img {
+    height: 40px;
+}
+
+.header__notify-info {
+    margin-left: 6px;
+    line-height: 1.6rem;
+}
+
+.header__notify-name {
+    display: block;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.header__notify-descriotion {
+    color: #666;
+    font-size: 1.1rem;
+}
+
