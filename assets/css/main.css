@@ -111,7 +111,7 @@
 /* HEADER NOTIFYCATION */
 .header__notify {
     position: absolute;
-    top: 100%;
+    top: 140%;
     right: 0;
     width: 404px;
     border: 1px solid #d3d3d3;
@@ -138,6 +138,11 @@
 
 .header__notify-item {
     list-style: none;
+    background-color: rgb(248 109 92 / 10%);
+}
+
+.header__notify-item:hover {
+    background-color: #cdcdcd;
 }
 
 .header__notify-link {
@@ -164,5 +169,16 @@
 .header__notify-descriotion {
     color: #666;
     font-size: 1.1rem;
+}
+
+.header__notify-footer {
+    text-align: center;
+    padding: 4px 16px;
+}
+
+.header__notify-footer-btn {
+    text-decoration: none;
+    color: #666;
+    font-size: 1.3rem;
 }
 
