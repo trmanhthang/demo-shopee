@@ -124,6 +124,7 @@
     user-select: none;
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in 0.2s ;
+    border-radius: 2px;
     display: none;
 }
 
@@ -224,5 +225,62 @@
     font-size: 1.3rem;
     font-weight: 400;
     padding: 8px 0;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.auth-form {
+    background-color: #fff;
+    width: 400px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.auth-form__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+
+.auth-form__heading {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.auth-form__group {
+    display: flex;
+    margin: 16px 0;
+}
+
+.auth-form__input {
+    width: 100%;
+    padding: 10px;
+}
+
+.auth-form__aside {
+    padding: 0px 62px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 14px 0;
+}
+
+.auth-form__policy-link {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
