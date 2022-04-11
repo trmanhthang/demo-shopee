@@ -42,3 +42,18 @@ html {
         opacity: 1;
     }
 }
+
+.btn {
+    width: 100px;
+    height: 32px;
+    background-color: var(--white-color);
+    border: none;
+    line-height: 3.2rem;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #dbdbdb;
+}
+
