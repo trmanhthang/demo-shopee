@@ -238,11 +238,16 @@
     display: flex;
 }
 
+.form-modal {
+    margin: auto;
+}
+
 .auth-form {
     background-color: #fff;
     width: 400px;
-    margin: auto;
     padding: 0 30px;
+    border-radius: 2px;
+    padding-bottom: 40px;
 }
 
 .auth-form__header {
@@ -254,12 +259,14 @@
 .auth-form__heading {
     font-size: 2rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .auth-form__switch-btn {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .auth-form__group {
@@ -270,13 +277,15 @@
 .auth-form__input {
     width: 100%;
     padding: 10px;
+    outline: none;
 }
 
 .auth-form__aside {
     padding: 0px 62px;
     font-size: 1.2rem;
     text-align: center;
-    margin: 14px 0;
+    margin-top: 16px;
+    margin-bottom: 48px;
 }
 
 .auth-form__policy-link {
@@ -284,3 +293,28 @@
     color: var(--primary-color);
 }
 
+.auth-form__controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn--primary:hover {
+    background: #ff4d2a;
+}
+
+.auth-form__socials {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    background-color: #ddd;
+    padding: 0 30px;
+}
+
+.btn--with-icon {
+    
+}
