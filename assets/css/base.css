@@ -3,6 +3,7 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color: #e42;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -44,16 +45,23 @@ html {
 }
 
 .btn {
-    width: 100px;
-    height: 32px;
-    background-color: var(--white-color);
+    min-width: 142px;
+    height: 34px;
     border: none;
-    line-height: 3.2rem;
-    padding: 4px;
+    border-radius: 2px;
+    line-height: 3.6rem;
+    background-color: var(--white-color);
     cursor: pointer;
 }
 
-.btn:hover {
-    background: #dbdbdb;
+.separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 13px;
+    border-left: 1px solid #f86d5c;
+    top: 0;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
