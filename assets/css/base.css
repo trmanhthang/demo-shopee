@@ -48,6 +48,17 @@ html {
     }
 }
 
+@keyframes headerNotifyGrowth {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 @keyframes growth {
     from{
         transform: scale(var(--growth-from));
@@ -65,6 +76,10 @@ html {
     line-height: 3.6rem;
     background-color: var(--white-color);
     cursor: pointer;
+}
+
+.btn--primary:hover {
+    background: #ff4d2a;
 }
 
 .separate::after {

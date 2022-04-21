@@ -112,7 +112,20 @@
                     </div>
     
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Tìm kiếm trong Shop">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm trong Shop">
+                            
+                            <!-- HEADER SEARCH HISTORY -->
+                            <ul class="header__search-history">
+                                <h3 class="header__search-heading">Lịch sử tìm kiếm</h3>
+                                <li class="header__search-history-item">
+                                    <a href="">PC Gaming</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Màn hình Gaming</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong Shop</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
@@ -128,13 +141,22 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="header__search-btn btn">
+                        <button class="header__search-btn btn btn--primary">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
-    
+                    
+                    <!-- CART LAYOUT -->
                     <div class="header__cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/img/no cart.png" alt="" class="header__cart-list--no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">
+                                    Chưa Có Sản Phẩm
+                                </span>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
