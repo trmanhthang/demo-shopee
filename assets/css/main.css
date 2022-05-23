@@ -554,6 +554,7 @@
     transform-origin: calc(100% - 30px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     display: none;
+    z-index: 1;
 }
 
 .header__cart-list::before {
@@ -840,10 +841,112 @@
 /* HOME FILTER */
 .home-filter {
     background-color: #ededed;
-    padding: 10px 0;
+    padding: 12px 22px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 2px;
 }
 
+.home-filter__wrap {
+    display: flex;
+    align-items: center;
+}
 
+.home-filter__label {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.home-filter__label-btn {
+    margin-right: 8px;
+}
+
+.select-input {
+    position: relative;
+    background-color: var(--white-color);
+    width: 180px;
+    height: 34px;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.select-input:hover .select-input__sort {
+    display: block;
+}
+
+.select-input__sort {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 180px;
+    background-color: var(--white-color);
+    padding: 4px 10px;
+    display: none;
+}
+
+.select-input__sort::before {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    content: "";
+    width: 200px;
+    height: 4px;
+}
+
+.select-input__sort-item {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.select-input__sort-item:hover {
+    color: var(--primary-color);
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    
+}
+
+.home-filter__page-num {
+    margin-right: 16px;
+}
+
+.home-filter__page-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    display: flex;
+}
+
+.home-filter__page-btn {
+    display: block;
+    width: 34px;
+    background-color: #ededed;
+    text-align: center;
+    line-height: 34px;
+    color: var(--text-color);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.home-filter__page-btn:first-child {
+    margin-right: 0.5px;
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.home-filter__page-btn--active:hover {
+    background-color: var(--white-color);
+}
