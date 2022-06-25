@@ -572,7 +572,7 @@
 }
 
 .header__cart-list-item{
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: auto;
 }
 
@@ -699,6 +699,7 @@
     border-radius: 2px;
     display: none;
     box-shadow: 0 0 3px #ccc;
+    z-index: 1;
 }
 
 .header__search-option::before {
