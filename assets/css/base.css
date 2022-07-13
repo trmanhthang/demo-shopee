@@ -7,7 +7,8 @@
     
     --header-height: 130px;
     --header-navbar-height: 39px;
-    --header-with-search-height: calc(var(--header-height) - var(--header-navbar-height))
+    --header-with-search-height: calc(var(--header-height) - var(--header-navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 * {
