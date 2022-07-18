@@ -290,6 +290,44 @@
                     </div>
                 </div>
             </div>
+
+            <input type="checkbox" hidden id="mobile-search-checkbox" class="mobile__search--checkbox">
+
+            <div class="header__search-mobile">
+                <div class="header__search-mobile-input-wrap">
+                    <input type="text" class="header__search-mobile-input" placeholder="Tìm kiếm trong Shop">
+                    
+                    <!-- HEADER SEARCH HISTORY -->
+                    <ul class="header__search-mobile-history">
+                        <h3 class="header__search-mobile-heading">Lịch sử tìm kiếm</h3>
+                        <li class="header__search-mobile-history-item">
+                            <a href="">PC Gaming</a>
+                        </li>
+                        <li class="header__search-mobile-history-item">
+                            <a href="">Màn hình Gaming</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__search-mobile-select">
+                    <span class="header__search-mobile-select-label">Trong Shop</span>
+                    <i class="header__search-mobile-select-icon fa-solid fa-angle-down"></i>
+
+                    <ul class="header__search-mobile-option">
+                        <li class="header__search-mobile-option-item">
+                            <span>Trong Shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                        <li class="header__search-mobile-option-item">
+                            <span>Ngoài Shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search-btn btn btn--primary">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            
             <ul class="header__sort-bar">
                 <li class="header__sort-item">
                     <a href="" class="header__sort-link">Liên Quan</a>
@@ -309,7 +347,7 @@
 
         <div class="container">
             <div class="grid wide">
-                <div class="row">
+                <div class="row sm-gutter content">
                     <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
@@ -340,6 +378,7 @@
                             </ul>
                         </nav>
                     </div>
+
                     <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <div class="home-filter__wrap">
@@ -377,7 +416,7 @@
                         </div>
 
                         <div class="home-product">
-                            <div class="row">
+                            <div class="row sm-gutter">
                                 <div class="col l-3 m-6 c-12 home-product__container">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/minion_i1030_2ba847d5f52c47b8baaaa9f21a2a672a.jpg);"></div>
@@ -875,7 +914,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col c-3 m-3">
+                    <div class="col l-3 m-3 c-6">
                         <h3 class="footer-heading">Chăm Sóc Khách Hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -889,7 +928,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col c-3 m-3">
+                    <div class="col l-3 m-3 c-6">
                         <h3 class="footer-heading">Giới Thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -904,7 +943,7 @@
                         </ul>
                     </div>
                 
-                    <div class="col c-3 m-3">
+                    <div class="col l-3 m-3 c-6">
                         <h3 class="footer-heading">Theo Dõi Chúng Tôi Trên</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -922,7 +961,7 @@
                         </ul>
                     </div>
                     
-                    <div class="col c-3 m-3">
+                    <div class="col l-3 m-3 c-6">
                         <h3 class="footer-heading">Tải Ứng Dụng</h3>
                         <div class="footer__qr">
                             <img src="./assets/img/qr.png" alt="" class="footer__qr-img">

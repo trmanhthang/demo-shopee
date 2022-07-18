@@ -76,4 +76,26 @@
     .header__logo {
         width: unset;
     }
+
+    .header__search-mobile {
+        display: none;
+    }
+
+    .mobile__search--checkbox:checked ~ .header__search-mobile {
+        display: flex;
+    }
+
+    .mobile__search--checkbox:checked ~ .header__sort-bar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .pagination-item__link {
+        min-width: 20px;
+        margin: 0 14px;
+    }
 }
