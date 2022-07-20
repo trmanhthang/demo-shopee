@@ -130,9 +130,15 @@
                 </nav>
 
                 <div class="header-with-search">
-                    <label for="mobile-search-checkbox" class="header__mobile-search">
-                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
-                    </label>
+                    <div class="mobile__btn">
+                        <label for="category-mobile-checkbox" class="category__checkbox">
+                            <i class="category__mobile-icon fa-solid fa-bars"></i>
+                        </label>
+    
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </div>
 
                     <div class="header__logo">
                         <img src="./assets/img/logo.png" alt="" class="header__logo-img">
@@ -175,7 +181,7 @@
                     
                     <!-- CART LAYOUT -->
                     <div class="header__cart">
-                        <div class="header__cart-wrap">
+                        <div class="header__cart-wrap" onclick="">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
                             <span class="header__cart-notice">5</span>
 
@@ -419,7 +425,7 @@
                             <div class="row sm-gutter">
                                 <div class="col l-3 m-6 c-12 home-product__container">
                                     <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/minion_i1030_2ba847d5f52c47b8baaaa9f21a2a672a.jpg);"></div>
+                                        <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/minion_i1030_3a29ed0d25dd4af9984d94346a51eb61.jpg);"></div>
                                         <h4 class="home-product-item__name">PC Gaming GVN Minion i1030</h4>
                                         <div class="home-product-item__price">
                                             <span class="home-product-item__price-old">9.790.000đ</span>
@@ -914,7 +920,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3 m-3 c-6">
+                    <div class="col l-3 m-3 c-12 footer-container">
                         <h3 class="footer-heading">Chăm Sóc Khách Hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -928,7 +934,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3 m-3 c-6">
+
+                    <div class="col l-3 m-3 c-12 footer-container">
                         <h3 class="footer-heading">Giới Thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -943,7 +950,7 @@
                         </ul>
                     </div>
                 
-                    <div class="col l-3 m-3 c-6">
+                    <div class="col l-3 m-3 c-12 footer-container">
                         <h3 class="footer-heading">Theo Dõi Chúng Tôi Trên</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -961,7 +968,7 @@
                         </ul>
                     </div>
                     
-                    <div class="col l-3 m-3 c-6">
+                    <div class="col l-3 m-3 c-12 footer-container">
                         <h3 class="footer-heading">Tải Ứng Dụng</h3>
                         <div class="footer__qr">
                             <img src="./assets/img/qr.png" alt="" class="footer__qr-img">
@@ -982,8 +989,43 @@
                 <p class="footer-bottom">© 2022 - Bản quyền thuộc về TMT-Shop</p>
             </div>
         </footer>
+        <!-- CATEGORY MOBILE -->
+        <input type="checkbox" hidden id="category-mobile-checkbox">
+        <nav class="category__mobile">
+            <h3 class="category__mobile-heading">
+                Danh Mục
+                <label for="" class="category__mobile-heading--close">
+                    <i class="category__mobile-heading-icon fa-solid fa-xmark"></i>
+                </label>
+            </h3>
+            <ul class="category__mobile-list">
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">Sản Phẩm</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">Laptop Gaming</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">Laptop Văn Phòng</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">PC Gaming - Đồ Hoạ</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">PC Văn Phòng</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">Linh kiện PC</a>
+                </li>
+                <li class="category__mobile-item">
+                    <a href="#" class="category__mobile-item-link">Apple</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="overplay"></div>
     </div>
 
+    <input type="checkbox" hidden id="category-mobile-checkbox">
     <!-- MODAL LAYOUT -->
     <div class="modal">
         <!-- Register form -->

@@ -96,6 +96,22 @@
 
     .pagination-item__link {
         min-width: 20px;
-        margin: 0 14px;
+        margin: 0 10px;
+    }
+
+    .footer-container {
+        margin-bottom: 20px;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-item {
+        justify-content: center;
+    }
+
+    .footer__qr {
+        justify-content: center;
     }
 }
