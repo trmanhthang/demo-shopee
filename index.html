@@ -130,13 +130,13 @@
                 </nav>
 
                 <div class="header-with-search">
-                    <div class="mobile__btn">
+                    <div class="mobile__container-btn">
                         <label for="category-mobile-checkbox" class="category__checkbox">
                             <i class="category__mobile-icon fa-solid fa-bars"></i>
                         </label>
     
-                        <label for="mobile-search-checkbox" class="header__mobile-search">
-                            <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                        <label for="mobile-search-checkbox" class="header__mobile-btn">
+                            <i class="header__mobile-btn-icon fa-solid fa-magnifying-glass"></i>
                         </label>
                     </div>
 
@@ -990,11 +990,11 @@
             </div>
         </footer>
         <!-- CATEGORY MOBILE -->
-        <input type="checkbox" hidden id="category-mobile-checkbox">
+        <input type="checkbox" hidden id="category-mobile-checkbox" class="category__mobile--checkbox">
         <nav class="category__mobile">
             <h3 class="category__mobile-heading">
                 Danh Mục
-                <label for="" class="category__mobile-heading--close">
+                <label for="category-mobile-checkbox" class="category__mobile-heading--close">
                     <i class="category__mobile-heading-icon fa-solid fa-xmark"></i>
                 </label>
             </h3>
@@ -1022,10 +1022,9 @@
                 </li>
             </ul>
         </nav>
-        <div class="overplay"></div>
+        <label for="category-mobile-checkbox" class="category__overplay"></label>
     </div>
 
-    <input type="checkbox" hidden id="category-mobile-checkbox">
     <!-- MODAL LAYOUT -->
     <div class="modal">
         <!-- Register form -->

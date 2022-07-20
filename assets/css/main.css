@@ -311,10 +311,6 @@
     font-size: 1.1rem;
 }
 
-.header__notify-footer {
-
-}
-
 .header__notify-footer-btn {
     display: block;
     text-align: center;
@@ -495,13 +491,13 @@
 }
 
 .category__checkbox,
-.header__mobile-search {
-    padding: 0 8px;
+.header__mobile-btn {
+    padding: 0 7px;
     display: none;
 }
 
 .category__mobile-icon,
-.header__mobile-search-icon {
+.header__mobile-btn-icon {
     color: var(--white-color);
     font-size: 2.6rem;
 }
@@ -867,6 +863,9 @@
     max-width: 100%;
     width: 240px;
     z-index: 2;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
 }
 
 .category__mobile,
@@ -884,6 +883,15 @@
 
 .category__mobile-heading--close {
     position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.category__mobile-heading-icon {
+    padding: 5px 8px;
+    color: var(--text-color);
 }
 
 .category__mobile-item,
@@ -923,7 +931,7 @@
     color: var(--primary-color);
 }
 
-.overplay {
+.category__overplay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -931,6 +939,8 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    display: none;
+    animation: fadeIn linear 0.2s;
 }
 
 /* HOME FILTER */
